@@ -1,11 +1,11 @@
 import { Main } from "../components/main/main";
 
-const Home = ({ products, setProducts, convertPrice }) => {
+const Home = ({ convertPrice, products, setProducts }) => {
   return (
     <Main
+      convertPrice={convertPrice}
       products={products}
       setProducts={setProducts}
-      convertPrice={convertPrice}
     />
   );
 };
