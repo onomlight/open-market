@@ -24,7 +24,7 @@ export const Main = ({ products, setProducts }) => {
       </div>
       <main className={styles.flex_wrap}>
         {products.map((product) => {
-          return <Product />;
+          return <Product key={"key-${product.id}"} product={product} />;
         })}
       </main>
     </>
