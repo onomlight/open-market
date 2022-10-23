@@ -50,11 +50,25 @@
       "image": "/images/image007.png"
     },
     {
+      "id": 9,
+      "name": "갓 만들어진 개발자",
+      "provider": "프론트",
+      "price": 10900,
+      "image": "/images/image009.png"
+    },
+    {
       "id": 8,
       "name": "우당탕탕 인테리어 책",
       "provider": "우당탕탕",
       "price": 5900,
       "image": "/images/image008.png"
+    },
+    {
+      "id": 10,
+      "name": "귀쫑긋 초롱이",
+      "provider": "고양이",
+      "price": 10900,
+      "image": "/images/image010.jpg"
     }
   ]
 }
