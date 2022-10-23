@@ -10,15 +10,21 @@ function App() {
   const [products, setProducts] = useState([]);
   // 메인에서 전체 받도록 진행
   const convertPrice = (price) => {
-    return price.toString().replace(/\B)
-  }
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  };
   return (
     <BrowserRouter>
       <TopNavigationBar />
       <Routes>
         <Route
           path="/"
-          element={<Home products={products} setProducts={setProducts} />}
+          element={
+            <Home
+              products={products}
+              setProducts={setProducts}
+              convertPrice={convertPrice}
+            />
+          }
         />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/cart" element={<Basket />} />

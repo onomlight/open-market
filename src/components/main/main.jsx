@@ -4,7 +4,7 @@ import { Product } from "../products/product";
 import { useEffect } from "react";
 import axios from "axios";
 
-export const Main = ({ products, setProducts }) => {
+export const Main = ({ products, setProducts, convertPrice }) => {
   useEffect(() => {
     axios.get("/data/products.json").then((data) => {
       //console.log(data);
@@ -24,7 +24,13 @@ export const Main = ({ products, setProducts }) => {
       </div>
       <main className={styles.flex_wrap}>
         {products.map((product) => {
-          return <Product key={"key-${product.id}"} product={product} />;
+          return (
+            <Product
+              key={"key-${product.id}"}
+              product={product}
+              convertPrice={convertPrice}
+            />
+          );
         })}
       </main>
     </>
