@@ -4,12 +4,16 @@ import { Product } from "../products/product";
 import { useEffect } from "react";
 import axios from "axios";
 
-export const Main = (products, setProducts) => {
+export const Main = ({ products, setProducts }) => {
   useEffect(() => {
     axios.get("/data/products.json").then((data) => {
-      console.log(data);
+      //console.log(data);
+      setProducts(data.data.products);
     });
-  }, []);
+  }, [setProducts]);
+
+  //console.log(products);
+
   return (
     <>
       <EventBanner />
@@ -19,7 +23,9 @@ export const Main = (products, setProducts) => {
         <p>높은 가격</p>
       </div>
       <main className={styles.flex_wrap}>
-        <Product />
+        {products.map((product) => {
+          return <Product />;
+        })}
       </main>
     </>
   );
