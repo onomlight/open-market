@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <TopNavigationBar cart={cart} />
       <Routes>
         <Route
