@@ -30,7 +30,7 @@
     },
     {
       "id": 5,
-      "name": "개발자 키보드",
+      "name": " 키보드",
       "provider": "numpy",
       "price": 99000,
       "image": "/images/image005.png"
@@ -58,7 +58,7 @@
     },
     {
       "id": 8,
-      "name": "우당탕탕 인테리어 책",
+      "name": " 인테리어 책",
       "provider": "우당탕탕",
       "price": 5900,
       "image": "/images/image008.png"
