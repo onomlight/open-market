@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/onomlight/open-market/static/css/main.4afa507f.css",
-    "main.js": "/onomlight/open-market/static/js/main.3186703a.js",
-    "index.html": "/onomlight/open-market/index.html",
-    "main.4afa507f.css.map": "/onomlight/open-market/static/css/main.4afa507f.css.map",
-    "main.3186703a.js.map": "/onomlight/open-market/static/js/main.3186703a.js.map"
+    "main.css": "./static/css/main.4afa507f.css",
+    "main.js": "./static/js/main.3186703a.js",
+    "index.html": "./index.html",
+    "main.4afa507f.css.map": "./static/css/main.4afa507f.css.map",
+    "main.3186703a.js.map": "./static/js/main.3186703a.js.map"
   },
   "entrypoints": [
     "static/css/main.4afa507f.css",
